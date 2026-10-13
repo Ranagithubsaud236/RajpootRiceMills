@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Figtree:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-forest: #0f3d2e;
+  --color-forest-light: #1d5a43;
+  --color-forest-dark: #082a1f;
+  --color-gold: #c9a24b;
+  --color-gold-light: #e6c97a;
+  --color-cream: #faf7ef;
+}
+
+html { scroll-behavior: smooth; }
+::selection { background: #e6c97a; color: #082a1f; }

@@ -1,0 +1,55 @@
+.font-display{font-family:'Fraunces',Georgia,serif}.font-body{font-family:'Figtree',system-ui,sans-serif}.font-lato{font-family:'Lato','Figtree',sans-serif}
+.kenburns{animation:kb 12s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.15)}}
+.slide-in{animation:si .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes si{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.float{animation:fl 4s ease-in-out infinite}@keyframes fl{50%{transform:translateY(-8px)}}
+.d2{animation-delay:.25s}.d3{animation-delay:.5s}.d4{animation-delay:.75s}
+.sway{animation:sw 3s ease-in-out infinite alternate}@keyframes sw{to{transform:translateX(14px)}}
+.pulse{animation:pl 3s ease-in-out infinite;transform-origin:center;transform-box:fill-box}@keyframes pl{50%{transform:scale(1.15)}}
+.fade-in{animation:fi .5s ease both}@keyframes fi{from{opacity:0}to{opacity:1}}
+
+/* logo */
+.stalk{transform-box:fill-box;transform-origin:50% 100%;animation:stk 4s ease-in-out infinite alternate}
+.stalk.b{animation-delay:-2s}
+@keyframes stk{from{transform:rotate(-3deg)}to{transform:rotate(3deg)}}
+.spin-slow{animation:spn 24s linear infinite;transform-box:fill-box;transform-origin:center}
+.group:hover .spin-hover{animation-duration:4s}
+@keyframes spn{to{transform:rotate(360deg)}}
+
+/* gold divider that draws in */
+.draw-x{animation:dx 1.1s .3s cubic-bezier(.2,.8,.2,1) both;transform-origin:left}
+@keyframes dx{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+/* image shine sweep on hover */
+.shine{position:relative;overflow:hidden}
+.shine::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);transform:translateX(-120%);transition:transform .9s ease}
+.shine:hover::after{transform:translateX(120%)}
+
+/* falling grains in banners */
+.drift{animation:dr linear infinite}
+@keyframes dr{from{transform:translateY(-40px) rotate(0)}to{transform:translateY(340px) rotate(260deg)}}
+
+/* recipe steam */
+.steam{animation:stm 3.2s ease-in infinite;opacity:0;transform-box:fill-box;transform-origin:50% 100%}
+
+/* processing step pictures */
+.spin-fast{animation:spn 2s linear infinite;transform-box:fill-box;transform-origin:center}
+.fall{animation:fal 1.6s ease-in infinite}@keyframes fal{0%{transform:translateY(-6px);opacity:0}25%{opacity:1}100%{transform:translateY(12px);opacity:0}}
+.slide-r{animation:sr 2.4s ease-in-out infinite}@keyframes sr{0%{transform:translateX(-4px);opacity:0}20%,80%{opacity:1}100%{transform:translateX(10px);opacity:0}}
+.blink{animation:blk 1.4s steps(2,start) infinite}@keyframes blk{to{visibility:hidden}}
+@keyframes stm{0%{opacity:0;transform:translateY(10px) scaleX(1)}30%{opacity:.7}100%{opacity:0;transform:translateY(-50px) scaleX(1.4)}}
+
+/* processing conveyor */
+.belt{animation:blt 1s linear infinite}@keyframes blt{to{stroke-dashoffset:-24}}
+.ride{animation:rd 7s linear infinite}@keyframes rd{from{transform:translateX(0)}to{transform:translateX(100%)}}
+.ping{animation:png 2.4s cubic-bezier(0,0,.2,1) infinite}@keyframes png{75%,100%{transform:scale(1.8);opacity:0}}
+
+/* contact */
+.shake{animation:shk .45s}@keyframes shk{20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
+.check{stroke-dasharray:60;stroke-dashoffset:60;animation:chk .7s .2s ease forwards}@keyframes chk{to{stroke-dashoffset:0}}
+.pop{animation:pp .5s cubic-bezier(.3,1.6,.5,1) both}@keyframes pp{from{transform:scale(.3);opacity:0}}
+
+.page-in{animation:pgi .6s ease both}@keyframes pgi{from{opacity:0;transform:translateY(12px)}}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.check{stroke-dashoffset:0}}
