@@ -50,6 +50,7 @@
 .check{stroke-dasharray:60;stroke-dashoffset:60;animation:chk .7s .2s ease forwards}@keyframes chk{to{stroke-dashoffset:0}}
 .pop{animation:pp .5s cubic-bezier(.3,1.6,.5,1) both}@keyframes pp{from{transform:scale(.3);opacity:0}}
 
+.progress{animation:prg 4s linear both}@keyframes prg{from{width:0}to{width:100%}}
 .page-in{animation:pgi .6s ease both}@keyframes pgi{from{opacity:0;transform:translateY(12px)}}
 
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.check{stroke-dashoffset:0}}

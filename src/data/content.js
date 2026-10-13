@@ -76,13 +76,18 @@ export const TESTIMONIALS = [
 ];
 
 export const SLIDES = [
-  { t: "Premium quality Super Basmati rice", img: "/images/hero-rice.jpg", v: "field" },
-  { t: "Modern milling machinery", img: "/images/hero-machines.jpg", v: "machines" },
-  { t: "Grown in Punjab Pakistan, best rice region", img: "/images/hero-punjab.jpg", v: "field" },
-  { t: "Rajpoot Rice & Processing Mills", img: "/images/hero-mill.jpg", v: "mill" },
+  { t: "Rajpoot Rice & Processing Mills", s: "Hafizabad, Punjab, Pakistan", img: "/images/slide-mill2.png", v: "mill", pos: "50% 60%" },
+  { t: "Modern processing plant", s: "Drying, husking and milling in one place.", img: "/images/slide-2b.png", v: "mill", fit: "contain", box: "62%", pos: "50% 42%" },
+  { t: "Grown in Punjab, Pakistan", s: "From golden paddy to perfect white grain.", img: "/images/slide-3.png?v=2", v: "field", fit: "contain" },
+  { t: "Premium quality Super Basmati rice", s: "Long grain, aged and carefully sorted.", img: "/images/slide-4.png", v: "field" },
+  { t: "Modern milling machinery", s: "Husking, whitening and sorting under one roof.", img: "/images/slide-5-hd.jpg", v: "machines" },
 ];
 
-export const BANNERS = [["Super", "Basmati Rice", "/images/banner-1.jpg"], ["Long-Grain", "Basmati Rice", "/images/banner-2.jpg"], ["1121 Par-Boiled", "Basmati Rice", "/images/banner-3.jpg"]];
+export const BANNERS = [
+  { a: "Super", t: "Basmati Rice", color: "#1c6b34", band: "#1f6b3a", label: "SUPER BASMATI", photo: "/images/super-basmati.jpg" },
+  { a: "Long-Grain", t: "Basmati Rice", color: "#1f5f9c", band: "#7a1f2b", label: "LONG GRAIN", photo: "/images/pk386.jpg" },
+  { a: "1121 Par-Boiled", t: "Basmati Rice", color: "#ffffff", band: "#8a5a1f", label: "1121 SELLA", photo: "/images/sella.jpg" },
+];
 
 export const IMG = {
   products: PRODUCTS.map((p) => p.img),
